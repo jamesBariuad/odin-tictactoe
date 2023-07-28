@@ -1,0 +1,1 @@
+a tictactoe game made using js and minimax algorithm for the ai

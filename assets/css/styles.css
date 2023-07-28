@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+  justify-content: center;
+
+}
+
+dialog{
+    margin: auto;
+    padding: 1em;
+    position: absolute;
+
+}
+
+.container {
+  display: grid;
+  width: 600px;
+  height: 600px;
+  gap: 5px solid black;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  overflow: hidden;
+}
+
+.cell {
+  outline: 2px solid black;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+}
