@@ -5,9 +5,17 @@
 }
 
 body {
-    display: flex;
+    display: grid;
   justify-content: center;
+  gap: 50px;
+  font-family: 'Special Elite', cursive;
 
+
+}
+
+button{
+  display: block;
+  font-family: 'Special Elite', cursive;
 }
 
 dialog{
