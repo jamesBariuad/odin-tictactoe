@@ -73,7 +73,7 @@ const displayController = (() => {
     if (condition == "win") {
       return (displayElement.textContent = `player ${playerMark} won!`);
     } else if (condition == "draw") {
-      return (displayElement.textContent = `DRAW!`);
+      return (displayElement.textContent = `It's a tie!`);
     } else {
       return (displayElement.textContent = `player ${playerMark}'s turn`);
     }
@@ -107,7 +107,6 @@ const displayController = (() => {
     if (e.target.textContent != "") {
       return;
     } else {
-      console.log(playerMark);
       gameBoard.getBoard()[e.target.id] = playerMark;
       switchPlayerMark();
       displayElementContent();
@@ -120,19 +119,10 @@ const displayController = (() => {
     switchPlayerMark,
     putMark,
     displayElementContent,
-
     setPlayerMarkToX,
   };
 })();
 
-const gameFlow = (() => {
+const startGame = (() => {
   displayController.displayBoard();
-  // while (!g) {
-  //   displayController.displayBoard();
-  //   gameBoard.checkWinCondition();
-  // }
 })();
-
-const playerFactory = (name, sign) => {
-  return { name, sign };
-};
